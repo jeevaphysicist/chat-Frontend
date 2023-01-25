@@ -1,0 +1,383 @@
+.chat-display{
+  position: relative;
+  color: black;
+
+}
+
+.chatpart{
+    display: flex;
+    direction: ltr;
+    /* padding-bottom: 30px; */
+    line-height: 2;
+    margin: auto;
+}
+
+/* Header */
+.chatheader{ 
+            position: relative;
+            width: 100%;
+            /* border-right:4px solid gray; */
+            padding: 20px;
+            height:var(--height);
+             overflow-y: scroll;
+             padding: 20px 10px 20px 20px;
+            
+}          
+.friend-header{
+  color:green;
+  font-size:25px;
+  position:fixed;
+}
+
+
+
+.friendslist{
+  width:100%;
+  height:60px;
+  /* background-color: aquamarine; */
+  border: 2px solid rgb(195, 194, 194);
+  border-radius: 40px;
+  padding:10px;
+  box-shadow: 10px 10px 20px 10px;
+  
+ 
+  
+} 
+
+.friendslist:hover{
+  
+  width:100%;
+  height:60px;
+  background-color: rgb(182, 207, 199);
+  border: 2px solid rgb(195, 194, 194);
+  border-radius: 40px;
+  padding:10px;
+  cursor: pointer;
+  
+} 
+.imagepart{
+  position: relative;
+  width: 60px;
+  height:60px;
+ 
+  
+}    
+.picture{
+  width:40px;
+  height:40px;
+  border-radius: 50px;
+}      
+   
+
+/* Main */
+.chatmain{
+         position: relative;
+         border: none;
+         width:100%;
+         border: none !important;
+         /* background-color: azure; */
+         /* padding: 20px; */
+         /* border-color: red; */
+         /* height: 100%; */
+         height:var(--height);
+
+          }
+ .user{
+  width: 100%;
+  background-color: black;
+  height: 60px;
+  padding: 10px;
+  
+ }       
+ .msgdis{
+  position: absolute;
+  right: 0;
+  left:0;
+  top:68px;
+  /* bottom:40px; */
+  width: 100%;
+  height:auto;
+  overflow-y: auto ;
+ }
+
+.dispaly{
+         position: absolute; 
+         /* display: flex; */
+         /* flex-direction: column-reverse; */
+         right: 0;
+          left:0;
+          top: 0px;
+          bottom:0px;
+          width: 100%;
+          height: auto; 
+          overflow-y: auto ;
+          /* overflow-x: hidden; */
+          /* border:2px 2px 0 2px solid gray; */
+          /* border-radius: 7px; */
+          padding:10px;
+            
+                
+        } 
+      
+
+  .other{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 10px;
+
+}   
+.other img{
+  float:left;
+  width: 30px;
+  height:30px;
+}
+.other .message-part{
+  width: 60%;
+  position: relative;
+  float: left;
+  background-color: rgb(0, 200, 255);
+  padding:5px;
+  border-radius: 20px;
+} 
+.other .time{
+  float: right;
+  font-size: 10px;
+  padding: 6px 0 0 0;
+  position: absolute;
+  left: 60%;
+  color:blue
+  
+}
+
+ .you{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    float: right;
+   
+} 
+.you img{
+  float:left;
+  width: 30px;
+  height:30px;
+}  
+.you .message-part{
+  width: 60%;
+  position: relative;
+  float: right;
+  background-color: bisque;
+  padding: 5px;
+ border-radius: 20px;
+}
+.you .time{
+  padding: 0px;
+  border:none;
+  float: right;
+  left: 55%;
+  font-size: 10px;
+  padding: 6px 0 0 0;
+  position: absolute;
+  color:blue
+ 
+}
+.other .name{
+  position: absolute;
+  left:10%;
+  font-size: 10px;
+  color:rgb(236, 16, 16);
+  padding:6px 0 0 0;
+  font-weight: bolder;
+}
+.you .name{
+  position: absolute;
+  /* top:-40%; */
+  left:10%;
+  font-size: 10px;
+  color:brown;
+  padding:6px 0 0 0;
+  font-weight: bolder;
+
+}
+.message{
+  font-size: 12px;
+  padding-left:5px;
+ 
+}
+
+#text-area{
+          
+          position: absolute;
+          /* left: 0; */
+          bottom: 0px;
+          width: 85%;
+          border:2px  solid gray;
+          border-radius: 7px 0 0 7px;
+
+          }
+.send{
+          border-radius: 0 7px 7px 0;;
+          position: absolute;
+          width:15%;
+          /* height: 30px; */
+          bottom: 0px;
+          right: 0px;
+          /* height:30px */
+     }              
+.menu .bi{
+      color:white
+      
+    } 
+.chatmain .modal{
+  position: absolute;
+}   
+
+.edit{
+  border:2px solid gray;
+  color:brown
+}
+
+ /* Footer */
+.chatfooter{
+            /* background-color: pink; */
+            position: relative;
+            width: 100%;
+            /* border-right:4px solid gray; */
+            padding: 20px;  
+            height:var(--height);
+            overflow-y: scroll;
+           }
+
+.online{
+  position:absolute;
+  width: 10px;
+  height:10px;
+  background-color: green;
+  border-radius: 50%;
+  right:85%;
+  right: 20%;
+}        
+
+.userimg{
+  padding: 0;
+  height: 50px;
+  width:50px;
+  border-radius: 50px;
+  border-color: grey;
+}
+.profilepart{
+  line-height: 2;
+}
+.profilepicture{
+  width: 250px;
+  height: 300px;
+  clear: right;
+}
+.searchfriends{
+  border-radius: 20px;
+  padding: 5px;
+}
+
+ input[type="file"] {
+  display: none;
+}
+ label
+ {
+  cursor: pointer;
+ }
+label {
+  cursor: pointer;
+  color:green;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* add friends components style  */
+
+.add-friends label {
+  border: none;
+}
+
+.add-friends input{
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.add-friends .card{
+  display: flex;
+ flex-direction: row;
+ width: 100%;
+ cursor: pointer;
+}
+.image{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+}
+.scroll{
+  margin-bottom: 40px;
+  overflow-y: scroll;
+ padding: 20px;
+ height: 400px;
+}
+
+/* profile part styling */
+.title{
+  font-size: 20px;
+  font-weight: bolder;
+  color: aquamarine;
+}
+.value{
+  font-weight: bolder;
+  font-style: italic;
+  color:brown ;
+}
+.logopart{
+  width: 100%;
+  height:60px;
+  background-color: rgb(120, 31, 4);
+  border-radius: 20px;
+  display: flex;
+  /* padding-bottom : 40px; */
+}
+ .logopart .logo{
+  padding: 0 50px 10px 30px;
+  width: 50%;
+  height:40px;
+  
+}
+ .logopart .account{
+  /* border: 2px solid gray; */
+  display: flex;
+  padding: 5px 0 20px 30px;
+  width: 50%;
+  height:40px;
+}
+
+.logo img{
+  width:200px;
+  height: auto;
+
+}
+.logopart .account .about{
+ margin-bottom: 10px;
+  justify-content: flex-end;
+  color: white;
+ font-weight: bolder;
+  margin-left: 40%;
+}
+.entry .logopart .account .about:hover{
+  background-color:skyblue;
+}
+
+.edit label {
+ border: none;
+
+}
+.edit input {
+  border-radius: 5px;
+}
+.back{
+  height: 100px;
+  width: 40px;
+}

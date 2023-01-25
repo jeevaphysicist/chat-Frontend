@@ -1,0 +1,105 @@
+.body{
+  background-color:whitesmoke;
+  height: var(--i);
+  width: 100%;
+}
+
+.back-ground{
+    width:300px;
+    margin: auto;
+    margin-top: 50px;
+    height:500px;
+    
+    
+     
+  }
+  
+  .profileimage{
+      width:40px;
+      height:40px;
+      border-radius: 50%;
+      border:none;
+      cursor: pointer;
+    }
+    .img{
+      cursor: pointer;
+      background: none;
+      padding: 0px;
+      border-radius: 50%;
+    }
+    
+    .login .card , .create-account .card{
+      background-color: transparent;
+      color:darkgoldenrod;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px 5px;
+      
+    }
+   
+    .login .card input , .create-account .card input{
+      border: 2px solid ;
+      border-radius: 5px;
+     color:orange
+    
+    }
+    .login .card input:hover , .create-account .card input:hover{
+      border: 2px solid skyblue;
+      color:rgb(129, 118, 42);
+    
+    
+    }
+    .login .card label ,.create-account .card label {
+      border: none;
+      color:darkgoldenrod
+    }
+   #error{
+    color: red;
+   }
+   .login, .create-account{
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 30px;
+   
+   }
+
+   /* logopart design */
+  .entry .logopart{
+    width: 100%;
+    height:60px;
+    background-color: rgb(120, 31, 4);
+    border-radius: 20px;
+    display: flex;
+    /* padding-bottom : 40px; */
+  }
+  .entry .logopart .logo{
+    padding: 0 50px 10px 30px;
+    width: 50%;
+    height:40px;
+    
+  }
+  .entry .logopart .account{
+    /* border: 2px solid gray; */
+    display: flex;
+    padding: 10px 0 10px 30px;
+    width: 50%;
+    height:40px;
+  }
+
+  .logo img{
+    width:200px;
+    height: auto;
+
+  }
+  .entry .logopart .account .about{
+    justify-content: flex-end;
+    color: white;
+   font-weight: bolder;
+    padding: 0px 10px 25px 10px;
+    margin-left: 40%;
+   border-radius: 20px;
+    border: 1px solid;
+  }
+  .entry .logopart .account .about:hover{
+  
+    background-color:skyblue;
+  }
