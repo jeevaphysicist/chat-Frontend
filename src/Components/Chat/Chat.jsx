@@ -101,7 +101,7 @@ export default function Chat() {
 
   // using sockets
   useEffect(()=>{
-       socket.current = io("ws://localhost:8080");     
+       socket.current = io("https://easy-chat-backend.onrender.com");     
   },[]);
 
   useEffect(()=>{
