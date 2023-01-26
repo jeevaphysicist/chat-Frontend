@@ -7,7 +7,7 @@ export default function Home() {
   const [entery,setEntery]=useState(false);
  
   useEffect(()=>{
-    let UserData = localStorage.getItem("UserData") ;
+    let UserData = sessionStorage.getItem("UserData") ;
     // console.log("Userdata",UserData);
     if(UserData != undefined ){
         setEntery(true);

@@ -86,7 +86,7 @@ export default function Addfriends() {
     const addfriendhandler = ()=>{
         // console.log("add frirnd handler !!!!!");
        
-        let currentuser = localStorage.getItem('UserData');
+        let currentuser = sessionStorage.getItem('UserData');
         currentuser = JSON.parse(currentuser);
         let req ={
             user_id:currentuser[0].user_id,

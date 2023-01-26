@@ -54,7 +54,7 @@ export default function Chat() {
        
   useEffect(()=>{
     // get userdata 
-   let UserData = localStorage.getItem("UserData");
+   let UserData = sessionStorage.getItem("UserData");
    UserData = JSON.parse(UserData);
    setCurrentuser(UserData);
 
@@ -101,7 +101,7 @@ export default function Chat() {
 
   // using sockets
   useEffect(()=>{
-       socket.current = io("http://localhost:8080");     
+       socket.current = io("ws://localhost:8080");     
   },[]);
 
   useEffect(()=>{

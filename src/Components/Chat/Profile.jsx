@@ -36,7 +36,7 @@ export default function Profile() {
     const [editbio,setEditbio] = useState('');
 
    useEffect(()=>{
-    let UserData = localStorage.getItem("UserData");
+    let UserData = sessionStorage.getItem("UserData");
     UserData = JSON.parse(UserData);
     setCurrentuser(UserData);
     let DATA = {
@@ -63,13 +63,13 @@ export default function Profile() {
        email:currentuser[0].email,
        photo:picture
      }
-     console.log("delete photo",data)
+    //  console.log("delete photo",data)
      fetch(`${api}/users/addphoto`,{method:"PUT",
      headers:{"Content-Type":"application/json"},
     body:JSON.stringify(data)
   }).then(res=>res.json())
   .then(result=>{
-    console.log('result',result);
+    // console.log('result',result);
     window.location.reload();
   })
     }
@@ -85,7 +85,7 @@ export default function Profile() {
         var sizeInKb=sizeInBytes/1024;
         var mb =(sizeInKb/1024).toFixed(2);
  //  console.log("sizeof picture",mb);
-  if(mb <= 10){
+  if(mb <= 2){
     console.log("Photo is updated");
     let data = {
       user_id:currentuser[0].user_id,
@@ -98,12 +98,12 @@ export default function Profile() {
       body:JSON.stringify(data)
     }).then(res=>res.json())
     .then(result=>{
-      console.log('result',result);
+      // console.log('result',result);
       window.location.reload();
     })
   }
   else{
-    console.log("size limit is exceeded");
+    window.alert("photo size limit is exceeded");
   }
        
     };

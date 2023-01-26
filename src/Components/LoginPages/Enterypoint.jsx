@@ -165,7 +165,10 @@ export default function Home() {
   else{
     setLoginerr("");
     const UserData = result.data;
-    localStorage.setItem("UserData",JSON.stringify(UserData));
+    console.log("first",UserData);
+    sessionStorage.setItem("UserData",JSON.stringify(UserData));
+    // localStorage.setItem("userData",JSON.stringify(UserData))
+    // sessionStorage.setItem("UserData",JSON.stringify(UserData));
     window.location.reload();
   }
 })
